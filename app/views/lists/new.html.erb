@@ -1,0 +1,8 @@
+<div class="container p-5">
+  <h2> Add a new List </h2>
+
+  <%= simple_form_for [@list] do |f| %>
+    <%= f.input :name %>
+    <%= f.submit class:"btn btn-primary btn-sm"%>
+  <% end %>
+<div class="container p-5">
