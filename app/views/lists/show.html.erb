@@ -26,5 +26,9 @@
 </div>
 
 <div class="cards p-5">
-  <%= link_to "return to lists", lists_path, class: "btn btn-ghost"%>
+  <%= link_to "Delete list", list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Delete list?"}, class: "btn btn-ghost" %>
+</div>
+
+<div class="cards p-5">
+  <%= link_to "return to lists", lists_path, class: "btn btn-flat"%>
 </div>
