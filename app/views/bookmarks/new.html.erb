@@ -3,7 +3,7 @@
 
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.association :movie, collection: Movie.all, label: "Select a movie" %>
-    <%= f.input :comment, label: "Add you comment"%>
+    <%= f.input :comment, label: "Add you comment (min. 6 characters)"%>
     <%= f.submit class:"btn-flat", label: "Add the bookmark"%>
   <% end %>
 
