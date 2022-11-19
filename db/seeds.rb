@@ -12,6 +12,7 @@ Movie.destroy_all
   Movie.create!(
     title: Faker::Movie.title,
     overview: Faker::Movie.quote,
-    rating: rand(0.0..10.0)
+    rating: rand(0.0..10.0).round(1),
+    poster_url: Faker::LoremFlickr.image(search_terms: ['movies'], match_all: true)
   )
 end
